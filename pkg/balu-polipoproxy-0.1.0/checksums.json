@@ -1,0 +1,16 @@
+{
+  "Gemfile": "dbc1a15e3a264c03878028240cfc5d89",
+  "LICENSE": "2c1c00f9d3ed9e24fa69b932b7e7aff2",
+  "README.md": "de3b1da64c9db9dd90d4dd5e1541c092",
+  "Rakefile": "20b80e526e351a74df2001f504e756d2",
+  "files/proxy.pac": "a3fe9c9bb4d0f2ec6ff813c2bfa37a48",
+  "manifests/config.pp": "04aafc5724978f2d93c1fb9b38f5e831",
+  "manifests/init.pp": "bc67031fd69b0cf4d638608a1ab1f009",
+  "manifests/install.pp": "512f59d977c580848444796a0012b05f",
+  "manifests/params.pp": "e9e87db8309c150733293a75361b7e0b",
+  "metadata.json": "a4ff87cf1fc350d9bf40de5fab2c91fa",
+  "spec/classes/init_spec.rb": "788684700f3f223aac9cdf0316d1b4f4",
+  "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+  "templates/config.erb": "6df56176ed7c03586ee3a4fea1402417",
+  "tests/init.pp": "b81b898bfe75e79396aafe27fd2c33d7"
+}

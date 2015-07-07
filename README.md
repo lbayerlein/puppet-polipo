@@ -6,55 +6,35 @@
 2. [Module Description - What the module does and why it is useful](#module-description)
 3. [Setup - The basics of getting started with polipoproxy](#setup)
     * [What polipoproxy affects](#what-polipoproxy-affects)
-    * [Setup requirements](#setup-requirements)
     * [Beginning with polipoproxy](#beginning-with-polipoproxy)
-4. [Usage - Configuration options and additional functionality](#usage)
-5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
+4. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 5. [Limitations - OS compatibility, etc.](#limitations)
-6. [Development - Guide for contributing to the module](#development)
 
 ## Overview
+It is a modul for configuring polipo as a forward caching proxy.
 
-A one-maybe-two sentence summary of what the module does/what problem it solves.
-This is your 30 second elevator pitch for your module. Consider including
-OS/Puppet version it works with.
+All of this is in a very young state. I will extend this later
+
 
 ## Module Description
 
-If applicable, this section should have a brief description of the technology
-the module integrates with and what that integration enables. This section
-should answer the questions: "What does this module *do*?" and "Why would I use
-it?"
+This module install polipo from the repo and configures it. It gives parameters for the config file and creates an additional WPAD file for the browser. This file has an example content.
 
-If your module has a range of functionality (installation, configuration,
-management, etc.) this is the time to mention it.
+If you want to manage a leightweight squid alternative, you probably come to polipo. It has a proxy functionality with a tiny webserver included. You can roll out the file for you browser automatically. With dns or dhcp you can give the clients the info, to use this file.
 
 ## Setup
 
 ### What polipoproxy affects
 
-* A list of files, packages, services, or operations that the module will alter,
-  impact, or execute on the system it's installed on.
-* This is a great place to stick any warnings.
-* Can be in list or paragraph form.
-
-### Setup Requirements **OPTIONAL**
-
-If your module requires anything extra before setting up (pluginsync enabled,
-etc.), mention it here.
+* It installs the polipo packages for Debian and Ubuntu
+* It installs the WPAD file for the proxy informations
 
 ### Beginning with polipoproxy
 
-The very basic steps needed for a user to get the module up and running.
+On top of this webpage, there is the command you have to use for installing it. Alternatively type this:
 
-If your most recent release breaks compatibility or requires particular steps
-for upgrading, you may wish to include an additional section here: Upgrading
-(For an example, see http://forge.puppetlabs.com/puppetlabs/firewall).
+  puppet module install balu-polipoproxy
 
-## Usage
-
-Put the classes, types, and resources for customizing, configuring, and doing
-the fancy stuff with your module here.
 
 ## Reference
 
@@ -65,15 +45,5 @@ with things. (We are working on automating this section!)
 
 ## Limitations
 
-This is where you list OS compatibility, version compatibility, etc.
-
-## Development
-
-Since your module is awesome, other users will want to play with it. Let them
-know what the ground rules for contributing are.
-
-## Release Notes/Contributors/Etc **Optional**
-
-If you aren't using changelog, put your release notes here (though you should
-consider using changelog). You may also add any additional sections you feel are
-necessary or important to include here. Please use the `## ` header.
+* Ubuntu
+* Debian

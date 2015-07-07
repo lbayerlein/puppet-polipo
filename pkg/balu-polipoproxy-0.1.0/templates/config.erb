@@ -1,0 +1,31 @@
+# This file is controlled by Puppet.
+# DO NOT EDIT!!!
+
+# Proxy settings
+proxyAddress = <%= @proxyaddress %>
+proxyPort = <%= @proxyport %>
+proxyName = <%= @proxyname %> 
+
+# Logging
+logSyslog = true
+logFile = <%= @log %>
+
+# Access control
+allowedClients = <%= @allowedclients %>
+tunnelAllowedPorts = <%= @allowedports %>
+
+# Memory usage
+chunkHighMark = 50331648
+chunkLowMark = 0
+chunkCriticalMark = 0
+objectHighMark = 16384
+publicObjectLowMark = 0
+objectHashTableSize = 0
+
+# On-disk cache
+diskCacheRoot = <%= @diskcacheroot %>
+maxDiskEntries = 64
+diskCacheWriteoutOnClose = 65536
+diskCacheUnlinkTime = 32d
+diskCacheTruncateTime = 4d12h
+diskCacheTruncateSize = 67108864

@@ -1,0 +1,13 @@
+{
+  "name": "balu-polipoproxy",
+  "version": "0.1.0",
+  "author": "balu",
+  "summary": "Modul for configure polipo as a forwarding proxy",
+  "license": "GNU 2.0",
+  "source": "github.com",
+  "project_page": "https://github.com/lbayerlein/puppet-polipo",
+  "issues_url": "https://github.com/lbayerlein/puppet-polipo/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
