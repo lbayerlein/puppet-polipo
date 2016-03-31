@@ -35,7 +35,22 @@
 #
 # Copyright 2015 Your name here, unless otherwise noted.
 #
-class polipoproxy {
+class polipoproxy (
+  $pkgname        = $polipoproxy::params::pkgname,
+  $service        = $polipoproxy::params::service,
+  $proxypac       = $polipoproxy::params::proxypac,
+  $conffile       = $polipoproxy::params::conffile,
+  $log            = $polipoproxy::params::log,
+  $logsyslog      = $polipoproxy::params::logsyslog,
+  $proxyaddress   = $polipoproxy::params::proxyaddress,
+  $proxyport      = $polipoproxy::params::proxyport,
+  $proxyname      = $polipoproxy::params::proxyname,
+  $allowedclients = $polipoproxy::params::allowedclients,
+  $allowedports   = $polipoproxy::params::allowedports,
+  $diskcacheroot  = $polipoproxy::params::diskcacheroot,
+) inherits polipoproxy::params {
 
+  include polipoproxy::config
+  include polipoproxy::install
 
 }

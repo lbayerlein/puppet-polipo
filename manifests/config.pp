@@ -1,6 +1,6 @@
 # Install and configure an proxy server
 
-class polipoproxy::config inherits polipoproxy {
+class polipoproxy::config {
 
 #service settings for polipo
   service { $polipoproxy::params::service:
