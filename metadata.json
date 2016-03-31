@@ -1,6 +1,6 @@
 {
   "name": "balu-polipoproxy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "balu",
   "summary": "Modul for configure polipo as a forwarding proxy",
   "license": "GNU 2.0",
@@ -10,5 +10,13 @@
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"}
   ]
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "14.04"
+      ]
+    }
+  ],
 }
 
