@@ -1,10 +1,10 @@
 {
   "name": "balu-polipoproxy",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "balu",
   "summary": "Modul for configure polipo as a forwarding proxy",
-  "license": "GNU 2.0",
-  "source": "github.com",
+  "license": "Apache-2.0",
+  "source": "https://github.com/lbayerlein/puppet-polipo",
   "project_page": "https://github.com/lbayerlein/puppet-polipo",
   "issues_url": "https://github.com/lbayerlein/puppet-polipo/issues",
   "dependencies": [
@@ -14,6 +14,7 @@
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
+        "10.04",
         "14.04"
       ]
     }
